@@ -23,6 +23,11 @@ export class Order extends AppEntity {
     payment: string;
 
     @Column({
+	nullable: true,
+    })
+    amount: number;
+
+    @Column({
         type: 'jsonb',
         nullable: true,
     })
