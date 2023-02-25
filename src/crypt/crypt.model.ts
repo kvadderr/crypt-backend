@@ -17,6 +17,9 @@ export class Crypt extends AppEntity {
     name: string;
 
     @Column()
+    key: string;
+
+    @Column()
     address: string;
 
     @Column({
