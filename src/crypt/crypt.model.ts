@@ -23,6 +23,11 @@ export class Crypt extends AppEntity {
     address: string;
 
     @Column({
+    nullable: true
+    })
+    code: string;
+
+    @Column({
         default: 0,
         type: 'numeric', 
         precision: 10, scale: 2 
