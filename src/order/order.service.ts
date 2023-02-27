@@ -21,12 +21,11 @@ export class OrderService {
           );
         }
 
-        const HTML_MESSAGE = '\
-        <b>Новая заявка на вывод средств!<b>\n\
-        <p>'+ orderData.amount + ' ' + orderData.crypt + '</p>\n\
-        <p>Способ вывода: ' + orderData.payment + '</p>\n\
-        <p>Валюта для вывода: ' + orderData.currency + '</p>\
-        ';
+        const HTML_MESSAGE = 
+        '<b>Новая заявка на вывод средств!<b>\n '+
+        '<i>'+ orderData.amount + ' ' + orderData.crypt + '</i>\n'+
+        '<i>Способ вывода: ' + orderData.payment + '</i>\n'+
+        '<i>Валюта для вывода: ' + orderData.currency + '</i>';
 
         const data = {
             chat_id: -1001758934936,
