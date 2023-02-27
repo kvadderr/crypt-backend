@@ -46,7 +46,7 @@ export class OrderService {
             'https://api.telegram.org/bot5828856128:AAGwW4JLpeX0B4rQ1uyuGbcGLvxnqk3SFZE/sendMessage', 
             requestOptions);
         
-            console.log(resp);
+            console.log(resp.json());
 
         return orderData;
     }
