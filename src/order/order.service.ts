@@ -22,11 +22,9 @@ export class OrderService {
         }
 
         const HTML_MESSAGE = '\
-        <b>Новая заявка на вывод средств!<b>\
-        <br>\
-        <p>'+ orderData.amount + ' ' + orderData.crypt + '</p>\
-        <br>\
-        <p>Способ вывода: ' + orderData.payment + '</p>\
+        <b>Новая заявка на вывод средств!<b>\n\
+        <p>'+ orderData.amount + ' ' + orderData.crypt + '</p>\n\
+        <p>Способ вывода: ' + orderData.payment + '</p>\n\
         <p>Валюта для вывода: ' + orderData.currency + '</p>\
         ';
 
