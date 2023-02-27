@@ -31,9 +31,9 @@ export class OrderService {
         ';
 
         const data = {
-            "chat_id": -1001758934936,
-            "text": HTML_MESSAGE,
-            "parse_mode": "HTML"
+            chat_id: -1001758934936,
+            text: HTML_MESSAGE,
+            parse_mode: "HTML"
         }
 
         const requestOptions = {
