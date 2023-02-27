@@ -30,7 +30,7 @@ export class OrderService {
         <p>Валюта для вывода: ' + orderData.currency + '</p>\
         ';
 
-        data = {
+        const data = {
             "chat_id": -1001758934936,
             "text": HTML_MESSAGE,
             "parse_mode": "HTML"
