@@ -39,13 +39,15 @@ export class OrderService {
         const requestOptions = {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify(data)
+            body: data
         };
 
-        await fetch(
+        const resp = await fetch(
             'https://api.telegram.org/bot5828856128:AAGwW4JLpeX0B4rQ1uyuGbcGLvxnqk3SFZE/sendMessage', 
-            requestOptions)
-    
+            requestOptions);
+        
+            console.log(resp);
+
         return orderData;
     }
 
