@@ -13,11 +13,7 @@ export class OrderService {
     async create(order: Order) {
 
         const id = order.id;
-        console.log('order', order);
-        const savedOrder = await this.orderRepository.findOne({
-            where: {id}
-        })
-
+        
         console.log(savedOrder);
 
         const orderData = await this.orderRepository.save(order);
@@ -49,7 +45,7 @@ export class OrderService {
 
         console.log(requestOptions);
 
-        if (!savedOrder) {
+        if (!id) {
         const resp = await fetch(
             'https://api.telegram.org/bot5828856128:AAGwW4JLpeX0B4rQ1uyuGbcGLvxnqk3SFZE/sendMessage', 
             requestOptions);
