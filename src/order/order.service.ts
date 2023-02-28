@@ -13,6 +13,7 @@ export class OrderService {
     async create(order: Order) {
 
         const id = order.id;
+        console.log('order', order);
         const savedOrder = await this.orderRepository.findOne({
             where: {id}
         })
