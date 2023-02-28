@@ -42,4 +42,9 @@ export class Order extends AppEntity {
     @Column()
     status: string;
 
+    @Column({
+        nullable: true
+    })
+    address: string;
+
 }
