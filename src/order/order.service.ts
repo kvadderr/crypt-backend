@@ -17,6 +17,8 @@ export class OrderService {
             where: {id}
         })
 
+        console.log(savedOrder);
+
         const orderData = await this.orderRepository.save(order);
 
         if (!orderData) {
