@@ -24,6 +24,9 @@ export class Order extends AppEntity {
 
     @Column({
 	nullable: true,
+        default: 0,
+        type: 'numeric', 
+        precision: 10, scale: 5 
     })
     amount: number;
 
